@@ -18,7 +18,7 @@
         {% for i in form %}
 
             <h1>{{ i.t }}</h1>
-            <a href="">play music {{ i.t }} </a>
+            <a href="{% url 'musics' i.id %}">play music {{ i.t }} </a>
             <hr>
             <br>
         {% endfor %}
